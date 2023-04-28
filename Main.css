@@ -1,0 +1,42 @@
+:root{
+    --darker: #1f2937;
+    --dark: #374151;
+    --darkest: #111827;
+    --grey: #6b7280;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark);
+
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color:var(--grey);
+    margin-bottom: 1rem;
+}
+#new-task-form{
+    display: flex;
+}
+input, button{
+    appearance: none;
+    border: none;
+    
+}
