@@ -5,6 +5,7 @@
     --grey: #6b7280;
     --pink: #ec4899;
     --purple: #8b5cf6;
+    --light: white;
 }
 
 *{
@@ -38,5 +39,70 @@ header h1{
 input, button{
     appearance: none;
     border: none;
+    outline: none;
+    background-color: none;
+}
+.new-task-input{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.20rem;
     
+}
+#new-task-input::placeholder{
+    color: var(--grey);
+}
+#new-task-submit{
+    color: var(--pink);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#new-task-submit{
+    opacity: 0.8s;
+}
+#new-task-submit:submit{
+opacity: 0.6s;
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.Task-List h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 1rem;
+   
+}
+.content{
+    margin-right: 4rem ;
+    background-color: var(--darker);
+     border-radius: 1rem;
+     
+
+}
+ .text{
+   margin-right: 4rem ;
+   background-color: var(--darker);
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    
+}
+.actions{
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
 }
