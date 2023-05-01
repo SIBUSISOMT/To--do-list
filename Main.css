@@ -94,10 +94,10 @@ main{
 
 }
  .text{
-   margin-right: 4rem ;
    background-color: var(--darker);
     border-radius: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 25rem;
     
 }
 .actions{
@@ -106,3 +106,21 @@ main{
     margin-top: 0.5rem;
     border-radius: 1rem;
 }
+.edit{
+    border-radius: 1rem;
+    cursor: pointer;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   background-image: linear-gradient(to right, var(--pink), var(--purple));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.delete{
+    border-radius: 1rem;
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
