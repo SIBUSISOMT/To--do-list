@@ -8,6 +8,14 @@
     --light: white;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins', sans-serif;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,7 +29,7 @@ body{
     background-color: var(--dark);
 
 }
-header{
+.calender.header{
     padding: 2rem 1rem;
     max-width: 800px;
     width: 100%;
@@ -127,4 +135,54 @@ main{
 }
 h1 #new-task-form text{
     margin-right: 5rem;
+}
+.wrapper{
+background-color: aliceblue;
+margin-left: 33rem;
+margin-right: 2rem;
+border-radius: 1rem;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px 10px;
+
+}
+.wrapper .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+header .icons span{
+height: 38px;
+width: 38px;
+margin: 0 1px;
+cursor: pointer;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+font-size: 1.9rem;
+color: #878787;
+}
+header .icons span{  
+    background: #6b7280;
+}
+#title{
+    margin-left: 5rem;
+    padding-top: 2rem;
+}
+.calendar ul{
+display: flex;
+list-style: none;
+flex-wrap: wrap;
+text-align: center;
+}
+.calendar ul li{
+    width: calc(100%/7);
+}
+.calendar .days{
+    margin-bottom: 20px;
+}
+.calendar .weeks li{
+    font-weight: 500;
 }
