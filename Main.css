@@ -93,13 +93,7 @@ main{
      
 
 }
- .text{
-   background-color: var(--darker);
-    border-radius: 1rem;
-    padding-bottom: 2rem;
-    padding-left: 25rem;
-    
-}
+ 
 .actions{
     margin-left: 2rem;
     padding-bottom: 2rem;
@@ -123,4 +117,14 @@ main{
     -webkit-text-fill-color: transparent;
 
 }
+ #List{
+   background-color: rgb(182, 177, 168);
+    border-radius: 1rem;
+    padding-bottom: 3rem;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.3);
 
+    
+}
+h1 #new-task-form text{
+    margin-right: 5rem;
+}
