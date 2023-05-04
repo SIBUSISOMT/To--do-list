@@ -8,77 +8,52 @@
     --light: white;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'poppins', sans-serif;
-}
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Fira sans', sans-serif;
-
-}
 body{
-    display: flex;
-    flex-direction: column;
+    
     min-height: 100vh;
-    background-color: var(--dark);
+    background-color: rgb(75, 71, 71)
 
 }
-.calender.header{
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-}
-header h1{
+
+/* header{
+
     font-size: 2.5rem;
     font-weight: 300;
     color:var(--grey);
     margin-bottom: 1rem;
-}
-#new-task-form{
-    display: flex;
-}
-input, button{
-    appearance: none;
-    border: none;
-    outline: none;
-    background-color: none;
-}
-.new-task-input{
-    flex: 1 1 0%;
+} */
+
+
+#new-task-input{
+    flex: 1%;
     background-color: var(--darker);
     border-radius: 1rem;
-    padding: 1rem;
-    margin-right: 1rem;
     color: var(--light);
-    font-size: 1.20rem;
-    
-}
-#new-task-input::placeholder{
-    color: var(--grey);
+    font-size: 1rem;
+    padding-top: 1rem;
+   padding-left: 4rem;
+   padding-right: 3rem;
+   margin-left: 2rem;
 }
 #new-task-submit{
     color: var(--pink);
     border-radius: 1rem;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 70;
     background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     transition: 0.5s;
-}
-#new-task-submit{
+    margin-right: 1rem;
     opacity: 0.8s;
+   
+    padding-top: 0.5rem;
+
 }
-#new-task-submit:submit{
-opacity: 0.6s;
+
+#new-task-input::placeholder{
+    color: var(--grey);   
 }
 main{
     flex: 1 1 0%;
@@ -87,102 +62,37 @@ main{
     width: 100%;
     margin: 0 auto;
 }
-.Task-List h2{
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: var(--grey);
-    margin-bottom: 1rem;
-   
-}
-.content{
-    margin-right: 4rem ;
-    background-color: var(--darker);
-     border-radius: 1rem;
-     
 
-}
- 
-.actions{
-    margin-left: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 0.5rem;
-    border-radius: 1rem;
-}
-.edit{
-    border-radius: 1rem;
-    cursor: pointer;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   background-image: linear-gradient(to right, var(--pink), var(--purple));
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
-.delete{
-    border-radius: 1rem;
-    cursor: pointer;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
  #List{
    background-color: rgb(182, 177, 168);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding-bottom: 3rem;
     box-shadow: 0 30px 30px rgba(0,0,0,0.3);
-
-    
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
 }
-h1 #new-task-form text{
-    margin-right: 5rem;
+li{
+margin-left: 2rem;
 }
-.wrapper{
-background-color: aliceblue;
-margin-left: 33rem;
-margin-right: 2rem;
-border-radius: 1rem;
-}
-.wrapper header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 30px 10px;
-
-}
-.wrapper .current-date{
-    font-size: 1.45rem;
-    font-weight: 500;
-}
-header .icons span{
-height: 38px;
-width: 38px;
-margin: 0 1px;
+.date{
+    background-color: var(--darker);
+    border-radius: 1rem;
+    color: var(--light);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-top: 4rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
 cursor: pointer;
-text-align: center;
-line-height: 38px;
-border-radius: 50%;
-font-size: 1.9rem;
-color: #878787;
-}
-header .icons span{  
-    background: #6b7280;
+
 }
 #title{
-    margin-left: 5rem;
-    padding-top: 2rem;
+    color: #ddda10;
 }
-.calendar ul{
-display: flex;
-list-style: none;
-flex-wrap: wrap;
-text-align: center;
+#paragraph{
+    margin-left: 2rem; 
+   
+    margin-left: 2rem;
 }
-.calendar ul li{
-    width: calc(100%/7);
-}
-.calendar .days{
-    margin-bottom: 20px;
-}
-.calendar .weeks li{
-    font-weight: 500;
-}
+

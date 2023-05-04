@@ -3,14 +3,15 @@ const input_field = document.getElementById("new-task-input");
 const submit_button= document.getElementById("new-task-submit");
 const output = document.getElementById("List");
 const trash = document.getElementsByClassName("uil uil-airplay");
+const date = document.getElementsByClassName("date")
    
 
 submit_button.addEventListener('click',(e)=>{
  e.preventDefault()
- let list = document.createElement('p')
+ let list = document.createElement('li')
  list.innerText= input_field.value;
  input_field.value = '';
- output.appendChild(list)
+ output.appendChild(list);
 
 list.addEventListener('click',(e)=>{
     list.style.textDecorationColor= 'orange'
@@ -22,5 +23,7 @@ list.addEventListener('dblclick',()=>{
     output.removeChild(list);
 })
 
-});
 
+
+});
+ 
