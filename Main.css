@@ -8,52 +8,39 @@
     --light: white;
 }
 
+
 body{
     
     min-height: 100vh;
-    background-color: rgb(75, 71, 71)
+    background-color: var(--dark)
 
-}
-
-/* header{
-
-    font-size: 2.5rem;
-    font-weight: 300;
-    color:var(--grey);
-    margin-bottom: 1rem;
-} */
-
-
-#new-task-input{
-    flex: 1%;
-    background-color: var(--darker);
-    border-radius: 1rem;
-    color: var(--light);
-    font-size: 1rem;
-    padding-top: 1rem;
-   padding-left: 4rem;
-   padding-right: 3rem;
-   margin-left: 2rem;
 }
 #new-task-submit{
-    color: var(--pink);
     border-radius: 1rem;
-    font-size: 1.5rem;
-    font-weight: 70;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 15px;
+    font-weight: 70;  
     cursor: pointer;
     transition: 0.5s;
     margin-right: 1rem;
-    opacity: 0.8s;
+    background-color: rgb(207, 192, 165);
+    padding: 1%;
+}#date, #new-task-input{
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(134, 132, 127);
+    height: 1.5rem;
+    padding: 1%;
+    border: none;
+    width: auto;
+    margin: 1%;
    
-    padding-top: 0.5rem;
-
 }
 
 #new-task-input::placeholder{
-    color: var(--grey);   
+    color: var(--darkest); 
+      
 }
 main{
     flex: 1 1 0%;
@@ -64,35 +51,29 @@ main{
 }
 
  #List{
-   background-color: rgb(182, 177, 168);
-    border-radius: 0.5rem;
-    padding-bottom: 3rem;
+   background-color: rgb(167, 153, 129);   
+    padding: 0.5rem;
     box-shadow: 0 30px 30px rgba(0,0,0,0.3);
-    margin-bottom: 2rem;
     border-radius: 1rem;
-    margin-left: 1rem;
+    font-size: 1.5rem;
 }
-li{
+p{
 margin-left: 2rem;
 }
-.date{
-    background-color: var(--darker);
-    border-radius: 1rem;
-    color: var(--light);
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-top: 4rem;
-    padding-top: 1rem;
-    padding-left: 0.5rem;
-cursor: pointer;
 
-}
 #title{
-    color: #ddda10;
+    color: rgb(167, 153, 129);
+    margin-left: 25rem;
+    font-size: 2rem;
 }
 #paragraph{
     margin-left: 2rem; 
-   
-    margin-left: 2rem;
+    color: #e6dddd;
+    font-size: 15px;
 }
-
+#hint{
+    color: #74716d;
+}
+#task{
+   color: #e6dddd;
+}
